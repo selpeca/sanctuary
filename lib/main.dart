@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sanctuary/presentation/screens/splash_screen.dart';
+import 'package:sanctuary/presentation/screens/notes_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: NotesScreen(),
     );
   }
 }
