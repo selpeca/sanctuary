@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sanctuary/presentation/models/note.dart';
+import 'package:sanctuary/presentation/models/task.dart';
 import 'package:sanctuary/presentation/widgeds/notes/card_note.dart';
 import 'package:sanctuary/presentation/widgeds/notes/search_note.dart';
 
@@ -11,10 +12,17 @@ class NotesView extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<Note> notes = [
       Note(
-        title: 'Note 1',
-        content: 'Content for note 1',
+        title: 'Design Inspiration',
+        content: 'Focus on the interplay between light and structure. Use the 8px grid to maintain mathematical harmony dior los amenire',
         date: DateTime(2026, 10, 23),
         imageUrl: 'https://picsum.photos/200',
+      ),
+      Note(
+        title: 'Listado de tareas',
+        tasks: [
+          Task(description: 'Task 1'),
+          Task(description: 'Task 2'),
+        ],
       ),
       Note(
         title: 'Note 2',
@@ -83,6 +91,7 @@ class NotesView extends StatelessWidget {
                   content: note.content,
                   date: note.date,
                   imageUrl: note.imageUrl,
+                  tasks: note.tasks,
                 );
               },
             ),
