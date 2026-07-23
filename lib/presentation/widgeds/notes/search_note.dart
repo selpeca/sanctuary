@@ -24,7 +24,7 @@ class _SearchNoteState extends State<SearchNote> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 16),
           child: TextField(
             textAlign: TextAlign.start,
             textAlignVertical: TextAlignVertical.center,

@@ -3,7 +3,7 @@ import 'package:sanctuary/presentation/views/calendar_view.dart';
 import 'package:sanctuary/presentation/views/config_view.dart';
 import 'package:sanctuary/presentation/views/notes_view.dart';
 import 'package:sanctuary/presentation/views/task_view.dart';
-import 'package:sanctuary/presentation/widgeds/add_note_button.dart';
+import 'package:sanctuary/presentation/widgeds/notes/add_button_note.dart';
 import 'package:sanctuary/presentation/widgeds/app_bar.dart';
 
 class NotesScreen extends StatefulWidget {
